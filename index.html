@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+    <title>Js Challeng</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>Your Age in Days</h2>
+    <div class="flex-box">
+        <button class="btn btn-success" onclick="ageInDays()">Click me </button>
+        <button class="btn btn-danger" onclick="restart()">Reset</button>
+    </div>
+    <div id="result"></div>
+    </div>
+    <div class="container-1">
+        <h2>Generate cats </h2>
+        <button class="btn btn-primary" onclick="cat()">Generate</button>
+        <div class="flex-box" id="flexCat">
+           
+        </div>
+    </div>
+    <div class="container-1">
+        <h2>Rock, Paper, Scissor</h2>
+        <div class="flex-box" id="flexImage" id="flex-Image">
+            <img id="rock" src="rock.jpg" alt="" height="150" width="150" onclick="game(this)">
+            <img id="paper" src="paper.jpg" alt="" height="150" width="150" onclick="game(this)">
+            <img id="scissor" src="scissors.png" alt="" height="150" width="150" onclick="game(this)">
+        </div>
+    </div>
+    <div class="container-1">
+        <h2>Ghange the Button color</h2>
+        <div class="flex-box">
+            <form action="" >
+            <select name="changeColor" id="colorChange" onchange="buttonChange(this)">
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+            </select>
+            </form> 
+            <button class="btn btn-primary">Hello</button>
+            <button class="btn btn-success">Yahoo</button>
+            <button class="btn btn-danger">Google</button>
+            <button class="btn btn-warning">Facebook</button>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
